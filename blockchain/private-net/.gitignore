@@ -1,0 +1,10 @@
+# Mật khẩu signer — KHÔNG commit
+password.txt
+
+# Dữ liệu node (keystore, chaindata, nodekey...)
+node1/
+node2/
+
+# Log / lịch sử console
+*.log
+**/history

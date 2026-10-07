@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+coverage/
+cache/
+artifacts/
+typechain-types/
+.env
+.DS_Store
+*.log
+blockchain/private-net/node1/
+blockchain/private-net/node2/
+blockchain/private-net/password.txt

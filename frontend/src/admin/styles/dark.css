@@ -1,0 +1,704 @@
+/* —— Admin dark theme —— */
+.admin.is-dark {
+  color-scheme: dark;
+  --ink: #eef4f7;
+  --ink-soft: #9aafbd;
+  --paper: #101820;
+  --paper-deep: #0c1218;
+  --teal: #3bb6bb;
+  --teal-deep: #6fd0d4;
+  --brass: #d0b078;
+  --line: rgba(238, 244, 247, 0.1);
+  --danger: #ff8a80;
+  --ok: #4ade9b;
+  --shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+  --admin-side: #0a1118;
+  --admin-side-2: #111b24;
+  --admin-surface: #162029;
+  --admin-surface-2: #1b2833;
+  --admin-elevated: #21303c;
+  --admin-hero-from: #152029;
+  --admin-hero-mid: #1a2a35;
+  --admin-hero-to: #132029;
+  --admin-input-bg: rgba(8, 13, 18, 0.72);
+  --admin-chip-bg: rgba(8, 13, 18, 0.55);
+  --admin-overlay: rgba(3, 6, 10, 0.68);
+
+  background:
+    radial-gradient(900px 420px at 100% 0%, rgba(59, 182, 187, 0.12), transparent 56%),
+    radial-gradient(680px 360px at 0% 100%, rgba(208, 176, 120, 0.06), transparent 50%),
+    linear-gradient(180deg, #0c1218 0%, #101820 48%, #0e151c 100%);
+  color: var(--ink);
+}
+
+.admin.is-dark .admin-side {
+  --side-fg: #e8eef2;
+  --side-fg-soft: rgba(232, 238, 242, 0.62);
+  --side-fg-strong: #ffffff;
+  --side-line: rgba(255, 255, 255, 0.08);
+  --side-hover: rgba(255, 255, 255, 0.07);
+  --side-active-bg: linear-gradient(90deg, rgba(42, 168, 173, 0.28), rgba(42, 168, 173, 0.1));
+  --side-active-border: rgba(42, 168, 173, 0.45);
+  --side-ico-hover: #7fd4d8;
+  --side-ico-active: #8fe0e4;
+  --side-rail: linear-gradient(180deg, #6fd0d4, #2aa8ad);
+  --side-dot: #6fd0d4;
+  --side-dot-ring: rgba(111, 208, 212, 0.18);
+  --side-scroll: rgba(255, 255, 255, 0.16);
+  --side-group: rgba(232, 238, 242, 0.38);
+  --side-card-bg: rgba(255, 255, 255, 0.05);
+  --side-card-border: rgba(255, 255, 255, 0.08);
+  --side-toggle-bg: rgba(255, 255, 255, 0.05);
+  --side-toggle-border: rgba(255, 255, 255, 0.12);
+  --side-glow: rgba(42, 168, 173, 0.14);
+  --side-danger-bg: rgba(255, 138, 128, 0.12);
+  --side-danger-fg: #ffb4ae;
+  --side-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  background:
+    radial-gradient(420px 220px at 0% 0%, rgba(42, 168, 173, 0.14), transparent 60%),
+    linear-gradient(180deg, var(--admin-side) 0%, var(--admin-side-2) 100%);
+}
+
+.admin.is-dark .side-toggle:hover {
+  background: rgba(42, 168, 173, 0.28);
+  border-color: rgba(42, 168, 173, 0.4);
+}
+
+.admin.is-dark .side-toggle:focus-visible,
+.admin.is-dark .admin-nav button:focus-visible,
+.admin.is-dark .side-foot-btn:focus-visible {
+  outline-color: rgba(111, 208, 212, 0.75);
+}
+
+/* —— Typography —— */
+.admin.is-dark .admin-main {
+  color: var(--ink);
+}
+
+.admin.is-dark .admin-head h1,
+.admin.is-dark .panel-title h2,
+.admin.is-dark .catalog-hero h2,
+.admin.is-dark .books-hero h2,
+.admin.is-dark .mint-hero h2,
+.admin.is-dark .stock-title,
+.admin.is-dark .modal-head h2,
+.admin.is-dark strong {
+  color: var(--ink);
+}
+
+.admin.is-dark .muted,
+.admin.is-dark .admin-head p,
+.admin.is-dark .stock-authors,
+.admin.is-dark .stock-meta,
+.admin.is-dark .tiny {
+  color: var(--ink-soft);
+}
+
+.admin.is-dark a:hover {
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .mono {
+  color: var(--ink);
+}
+
+/* —— Buttons —— */
+.admin.is-dark .btn-ghost {
+  background: rgba(238, 244, 247, 0.05);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.admin.is-dark .btn-ghost:hover {
+  background: rgba(59, 182, 187, 0.14);
+  border-color: rgba(59, 182, 187, 0.35);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .btn-primary {
+  background: linear-gradient(180deg, #42c0c5 0%, #2fa0a5 100%);
+  color: #061216;
+  font-weight: 650;
+  box-shadow: 0 10px 28px rgba(59, 182, 187, 0.22);
+}
+
+.admin.is-dark .btn-primary:hover {
+  background: linear-gradient(180deg, #56d0d4 0%, #3bb6bb 100%);
+  color: #041012;
+}
+
+.admin.is-dark .btn-primary:disabled {
+  opacity: 0.55;
+}
+
+.admin.is-dark .btn-danger {
+  background: rgba(255, 138, 128, 0.1);
+  border-color: rgba(255, 138, 128, 0.32);
+  color: var(--danger);
+}
+
+.admin.is-dark .theme-toggle.active {
+  background: rgba(59, 182, 187, 0.16);
+  border-color: rgba(59, 182, 187, 0.38);
+  color: var(--teal-deep);
+}
+
+/* —— Forms —— */
+.admin.is-dark .field label {
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .field input,
+.admin.is-dark .field select,
+.admin.is-dark .field textarea,
+.admin.is-dark .search-field,
+.admin.is-dark .search-field input,
+.admin.is-dark .stock-sort,
+.admin.is-dark select,
+.admin.is-dark .toolbar select,
+.admin.is-dark .select-inline {
+  background: var(--admin-input-bg);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.admin.is-dark .field input::placeholder,
+.admin.is-dark .search-field input::placeholder,
+.admin.is-dark textarea::placeholder {
+  color: rgba(154, 175, 189, 0.5);
+}
+
+.admin.is-dark .field input:focus,
+.admin.is-dark .field select:focus,
+.admin.is-dark .field textarea:focus,
+.admin.is-dark .search-field:focus-within {
+  border-color: rgba(59, 182, 187, 0.55);
+  box-shadow: 0 0 0 3px rgba(59, 182, 187, 0.14);
+}
+
+/* —— Surfaces / cards —— */
+.admin.is-dark .panel,
+.admin.is-dark .table-wrap.panel,
+.admin.is-dark .chain-node,
+.admin.is-dark .stat,
+.admin.is-dark .catalog-stat,
+.admin.is-dark .books-hero-stat,
+.admin.is-dark .supplier-card,
+.admin.is-dark .pub-card,
+.admin.is-dark .stock-card,
+.admin.is-dark .mint-recent-card,
+.admin.is-dark .stock-flow-card,
+.admin.is-dark .stock-alert,
+.admin.is-dark .stock-in-preview,
+.admin.is-dark .mint-checklist,
+.admin.is-dark .mint-check {
+  background: var(--admin-surface);
+  border-color: var(--line);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+  color: var(--ink);
+}
+
+.admin.is-dark .stat.accent {
+  background: linear-gradient(145deg, rgba(59, 182, 187, 0.16), var(--admin-surface));
+}
+
+.admin.is-dark .stat strong,
+.admin.is-dark .catalog-stat strong,
+.admin.is-dark .books-hero-stat strong {
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .books-hero-stat.is-warn strong {
+  color: var(--brass);
+}
+
+.admin.is-dark .books-hero-stat.is-danger strong {
+  color: var(--danger);
+}
+
+/* —— Heroes —— */
+.admin.is-dark .books-hero,
+.admin.is-dark .catalog-hero {
+  background:
+    radial-gradient(620px 260px at 100% 0%, rgba(59, 182, 187, 0.14), transparent 55%),
+    linear-gradient(135deg, var(--admin-hero-from) 0%, var(--admin-hero-mid) 55%, var(--admin-hero-to) 100%);
+  border-color: var(--line);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
+}
+
+.admin.is-dark .mint-hero {
+  background:
+    radial-gradient(700px 280px at 100% 0%, rgba(59, 182, 187, 0.28), transparent 55%),
+    linear-gradient(135deg, #0a1218 0%, #123038 50%, #1a5c60 120%);
+  border-color: rgba(59, 182, 187, 0.22);
+  color: #eef6f7;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.admin.is-dark .mint-hero h2 {
+  color: #fff;
+}
+
+.admin.is-dark .mint-hero-copy > p {
+  color: rgba(238, 246, 247, 0.78);
+}
+
+.admin.is-dark .modal-eyebrow,
+.admin.is-dark .books-hero-eyebrow,
+.admin.is-dark .mint-hero-eyebrow {
+  color: var(--brass);
+}
+
+/* —— Chips / toggles —— */
+.admin.is-dark .books-view-toggle,
+.admin.is-dark .books-chip,
+.admin.is-dark .stock-stepper {
+  background: var(--admin-chip-bg);
+  border-color: var(--line);
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .books-chip:hover {
+  border-color: rgba(59, 182, 187, 0.35);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .books-chip.active,
+.admin.is-dark .books-view-btn.active {
+  background: rgba(59, 182, 187, 0.16);
+  border-color: rgba(59, 182, 187, 0.38);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .books-chip.stock-in_stock.active {
+  background: rgba(74, 222, 155, 0.12);
+  border-color: rgba(74, 222, 155, 0.32);
+  color: var(--ok);
+}
+
+.admin.is-dark .books-chip.stock-low.active {
+  background: rgba(208, 176, 120, 0.14);
+  border-color: rgba(208, 176, 120, 0.35);
+  color: var(--brass);
+}
+
+.admin.is-dark .books-chip.stock-out.active,
+.admin.is-dark .books-chip.stock-inactive.active {
+  background: rgba(255, 138, 128, 0.12);
+  border-color: rgba(255, 138, 128, 0.32);
+  color: var(--danger);
+}
+
+.admin.is-dark .books-chip.stock-selling.active {
+  background: rgba(59, 182, 187, 0.16);
+  border-color: rgba(59, 182, 187, 0.38);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .stock-step-btn {
+  background: var(--admin-elevated);
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .stock-step-btn:hover:not(:disabled) {
+  background: rgba(59, 182, 187, 0.16);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .stock-step-qty.lvl-ok {
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .stock-step-qty.lvl-low {
+  color: var(--brass);
+}
+
+.admin.is-dark .stock-step-qty.lvl-out {
+  color: var(--danger);
+}
+
+/* —— Tables —— */
+.admin.is-dark table.admin-table th {
+  background: rgba(8, 13, 18, 0.9);
+  color: var(--ink-soft);
+  border-color: var(--line);
+}
+
+.admin.is-dark table.admin-table td {
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.admin.is-dark table.admin-table tr:hover td {
+  background: rgba(59, 182, 187, 0.06);
+}
+
+.admin.is-dark .stock-row.lvl-out {
+  background: rgba(255, 138, 128, 0.06);
+}
+
+.admin.is-dark .stock-row.lvl-low {
+  background: rgba(208, 176, 120, 0.06);
+}
+
+.admin.is-dark .move-row.type-out {
+  background: rgba(255, 138, 128, 0.04);
+}
+
+.admin.is-dark .move-row.type-in {
+  background: rgba(74, 222, 155, 0.04);
+}
+
+/* —— Modals / overlays —— */
+.admin.is-dark .edit-book-modal {
+  background:
+    linear-gradient(180deg, rgba(13, 115, 119, 0.1) 0%, transparent 140px),
+    var(--admin-surface-2);
+}
+
+.admin.is-dark .edit-book-aside,
+.admin.is-dark .edit-section,
+.admin.is-dark .edit-drop,
+.admin.is-dark .edit-book-foot {
+  background: color-mix(in srgb, var(--admin-surface) 92%, #000);
+}
+
+.admin.is-dark .edit-chip {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.admin.is-dark .modal-backdrop,
+.admin.is-dark .status-overlay {
+  background: var(--admin-overlay);
+}
+
+.admin.is-dark .modal-sheet,
+.admin.is-dark .status-card,
+.admin.is-dark .toast-pop,
+.admin.is-dark .toast {
+  background: var(--admin-surface-2);
+  border-color: var(--line);
+  color: var(--ink);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.5);
+}
+
+.admin.is-dark .toast-pop-text {
+  color: var(--ink);
+}
+
+.admin.is-dark .toast-pop-close {
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .toast-pop-close:hover {
+  background: rgba(238, 244, 247, 0.08);
+  color: var(--ink);
+}
+
+.admin.is-dark .modal-close {
+  background: rgba(238, 244, 247, 0.06);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.admin.is-dark .modal-close:hover {
+  background: rgba(59, 182, 187, 0.16);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .file-drop,
+.admin.is-dark .mint-preview,
+.admin.is-dark .mint-block,
+.admin.is-dark .cat-tree-panel {
+  background: rgba(8, 13, 18, 0.4);
+  border-color: var(--line);
+}
+
+.admin.is-dark .cat-node-row {
+  background: rgba(8, 13, 18, 0.28);
+  border-color: transparent;
+}
+
+.admin.is-dark .cat-node.L1 .cat-node-row {
+  background: linear-gradient(90deg, rgba(59, 182, 187, 0.1), rgba(8, 13, 18, 0.2) 60%);
+}
+
+.admin.is-dark .cat-node.L2 .cat-node-row {
+  background: linear-gradient(90deg, rgba(208, 176, 120, 0.08), rgba(8, 13, 18, 0.2) 60%);
+}
+
+.admin.is-dark .cat-node.L3 .cat-node-row {
+  background: rgba(8, 13, 18, 0.35);
+}
+
+.admin.is-dark .book-thumb,
+.admin.is-dark .stock-qty-badge,
+.admin.is-dark .stock-l2 {
+  background: rgba(8, 13, 18, 0.9);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+/* —— Badges / pills —— */
+.admin.is-dark .badge {
+  background: rgba(59, 182, 187, 0.14);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .badge.sale {
+  background: rgba(208, 176, 120, 0.16);
+  color: var(--brass);
+}
+
+.admin.is-dark .badge.mint {
+  background: rgba(74, 222, 155, 0.12);
+  color: var(--ok);
+}
+
+.admin.is-dark .badge.faucet {
+  background: rgba(96, 165, 250, 0.14);
+  color: #93c5fd;
+}
+
+.admin.is-dark .status-pill.listed {
+  background: rgba(208, 176, 120, 0.16);
+  color: var(--brass);
+}
+
+.admin.is-dark .status-pill.escrow,
+.admin.is-dark .status-pill.available {
+  background: rgba(59, 182, 187, 0.14);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .status-pill.owned {
+  background: rgba(238, 244, 247, 0.08);
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .status-pill.out_of_stock,
+.admin.is-dark .status-pill.inactive {
+  background: rgba(255, 138, 128, 0.12);
+  color: var(--danger);
+}
+
+.admin.is-dark .stock-level-pill.ok {
+  background: rgba(74, 222, 155, 0.12);
+  color: var(--ok);
+}
+
+.admin.is-dark .stock-level-pill.low {
+  background: rgba(208, 176, 120, 0.16);
+  color: var(--brass);
+}
+
+.admin.is-dark .stock-level-pill.out {
+  background: rgba(255, 138, 128, 0.12);
+  color: var(--danger);
+}
+
+.admin.is-dark .stock-level-pill.inactive {
+  background: rgba(238, 244, 247, 0.08);
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .move-pill.in {
+  background: rgba(74, 222, 155, 0.12);
+  color: var(--ok);
+}
+
+.admin.is-dark .move-pill.out {
+  background: rgba(255, 138, 128, 0.12);
+  color: var(--danger);
+}
+
+.admin.is-dark .move-pill.adjust {
+  background: rgba(59, 182, 187, 0.14);
+  color: var(--teal-deep);
+}
+
+/* —— Stock flow / alerts —— */
+.admin.is-dark .stock-flow-card.in {
+  border-color: rgba(74, 222, 155, 0.28);
+  color: var(--ok);
+  background: rgba(74, 222, 155, 0.06);
+}
+
+.admin.is-dark .stock-flow-card.out {
+  border-color: rgba(255, 138, 128, 0.28);
+  color: var(--danger);
+  background: rgba(255, 138, 128, 0.06);
+}
+
+.admin.is-dark .stock-flow-card.adj {
+  border-color: rgba(59, 182, 187, 0.28);
+  color: var(--teal-deep);
+  background: rgba(59, 182, 187, 0.06);
+}
+
+.admin.is-dark .stock-flow-card p {
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .stock-alert.warn {
+  background: rgba(208, 176, 120, 0.1);
+  border-color: rgba(208, 176, 120, 0.32);
+  color: var(--brass);
+}
+
+.admin.is-dark .stock-alert.danger {
+  background: rgba(255, 138, 128, 0.1);
+  border-color: rgba(255, 138, 128, 0.3);
+  color: var(--danger);
+}
+
+.admin.is-dark .kv dt {
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .kv dd {
+  color: var(--ink);
+}
+
+.admin.is-dark .pdf-preview-frame-wrap,
+.admin.is-dark .invoice-body {
+  background: rgba(8, 13, 18, 0.5);
+  border-color: var(--line);
+}
+
+.admin.is-dark .empty {
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .hash {
+  color: var(--ink-soft);
+  word-break: break-all;
+}
+
+/* —— Catch-all: mọi card/step còn sót nền sáng —— */
+.admin.is-dark .mint-steps li,
+.admin.is-dark .mint-recent-card,
+.admin.is-dark .mint-recent-body,
+.admin.is-dark .mint-block,
+.admin.is-dark .mint-check,
+.admin.is-dark .supplier-chip,
+.admin.is-dark .cat-legend,
+.admin.is-dark .cat-tree-panel,
+.admin.is-dark .cat-node-row,
+.admin.is-dark .cat-node-row:hover,
+.admin.is-dark .id-chip,
+.admin.is-dark .search-field,
+.admin.is-dark .toolbar,
+.admin.is-dark .empty.panel,
+.admin.is-dark .catalog-empty {
+  background: var(--admin-surface) !important;
+  border-color: var(--line) !important;
+  color: var(--ink);
+}
+
+.admin.is-dark .mint-steps strong,
+.admin.is-dark .mint-recent-title,
+.admin.is-dark .mint-recent-head h3,
+.admin.is-dark .catalog-hero h2,
+.admin.is-dark .supplier-card strong,
+.admin.is-dark .cat-tree-head,
+.admin.is-dark .panel-title h2,
+.admin.is-dark h1,
+.admin.is-dark h2,
+.admin.is-dark h3 {
+  color: var(--ink) !important;
+}
+
+.admin.is-dark .mint-steps p,
+.admin.is-dark .mint-recent-body > .muted,
+.admin.is-dark .mint-recent-meta,
+.admin.is-dark .catalog-hero p,
+.admin.is-dark .supplier-card .muted,
+.admin.is-dark .cat-legend-item {
+  color: var(--ink-soft) !important;
+}
+
+.admin.is-dark .cat-node.L1 > .cat-node-row {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 182, 187, 0.12),
+    var(--admin-surface) 55%
+  ) !important;
+}
+
+.admin.is-dark .cat-node.L2 > .cat-node-row {
+  background: linear-gradient(
+    90deg,
+    rgba(208, 176, 120, 0.1),
+    var(--admin-surface) 60%
+  ) !important;
+}
+
+.admin.is-dark .cat-node.L3 > .cat-node-row {
+  background: var(--admin-surface) !important;
+}
+
+.admin.is-dark .cat-stats .cat-stat-l2 strong,
+.admin.is-dark .cat-legend-item.L2 {
+  color: var(--brass) !important;
+}
+
+.admin.is-dark .cat-stats .cat-stat-l3 strong,
+.admin.is-dark .cat-legend-item.L3 {
+  color: var(--ink-soft) !important;
+}
+
+.admin.is-dark .mint-step-num {
+  background: linear-gradient(135deg, #2fa0a5, #3bb6bb);
+  color: #061216;
+}
+
+.admin.is-dark table.admin-table th {
+  background: rgba(8, 13, 18, 0.95) !important;
+}
+
+.admin.is-dark .stock-step-btn,
+.admin.is-dark .books-view-btn {
+  background: var(--admin-elevated);
+  color: var(--ink-soft);
+}
+
+.admin.is-dark .toast.ok.live-toast {
+  background: var(--admin-surface);
+  border-color: rgba(74, 222, 155, 0.3);
+  color: var(--ok);
+}
+
+.admin.is-dark .cat-icon.L1 {
+  background: rgba(59, 182, 187, 0.16);
+  color: var(--teal-deep);
+}
+
+.admin.is-dark .cat-icon.L2 {
+  background: rgba(208, 176, 120, 0.16);
+  color: var(--brass);
+}
+
+.admin.is-dark .cat-icon.L3 {
+  background: rgba(154, 175, 189, 0.14);
+  color: var(--ink-soft);
+}
+
+/* Mint hero giữ chữ sáng trên nền gradient tối */
+.admin.is-dark .mint-hero,
+.admin.is-dark .mint-hero * {
+  --ink: #eef6f7;
+  --ink-soft: rgba(238, 246, 247, 0.72);
+}
+
+.admin.is-dark .mint-hero .btn-ghost {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #eef6f7;
+}
+
+.admin.is-dark .mint-steps li,
+.admin.is-dark .mint-steps li * {
+  --ink: #eef4f7;
+  --ink-soft: #9aafbd;
+}

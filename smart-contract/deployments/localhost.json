@@ -1,0 +1,9 @@
+{
+  "network": "localhost",
+  "chainId": "54321",
+  "deployer": "0xd18624683f144a400317Fc7ec8437a8deDeEE906",
+  "BookNFT": "0x88eE8D00F59a125DB62941c9A7FD99927AE21Ccd",
+  "BookMarketplace": "0xb3174c5BDb4514251f6e561Ee9a64C8b1cc61AF6",
+  "feeBps": 500,
+  "deployedAt": "2026-10-06T12:27:20.122Z"
+}

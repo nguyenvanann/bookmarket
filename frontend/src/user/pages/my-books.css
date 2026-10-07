@@ -1,0 +1,80 @@
+.my-books-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.my-books-head h2 {
+  margin: 0 0 0.3rem;
+}
+
+.mono-addr {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.my-books-gate,
+.my-books-empty {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+  justify-items: center;
+  max-width: 420px;
+  margin: 1rem auto 0;
+}
+
+.my-books-gate-ico {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #2aa8ad, #0d7377);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(13, 115, 119, 0.28);
+  margin-bottom: 0.25rem;
+}
+
+.my-books-gate h2,
+.my-books-empty h2 {
+  margin: 0;
+}
+
+.book-tile-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.my-book-tile {
+  cursor: default;
+}
+
+.my-book-cover-link {
+  display: block;
+}
+
+.my-book-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.15rem;
+}
+
+.my-book-actions .btn {
+  padding: 0.5rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+.tiny {
+  font-size: 0.78rem;
+}
